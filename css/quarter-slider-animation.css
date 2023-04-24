@@ -1,0 +1,19 @@
+
+
+/* -----------------------------------------------------------------------------------------------------------------------------------------
+ Slider Animation || if you need to customize slider animation then use this code and please put it at bottom of CSS > responsive.css file
+----------------------------------------------------------------------------------------------------------------------------------------- */ 
+.ltn__slide-animation > * {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp; 
+}
+
+.slick-current .ltn__slide-animation > *,
+.ltn__slide-animation-active .ltn__slide-animation > * {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; 
+}
+
+
+
+
