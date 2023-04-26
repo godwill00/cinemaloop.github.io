@@ -19646,6 +19646,14 @@ input.cart-plus-minus-box {
   margin-bottom: 20px;
 }
 
+#Calculator .nice-select {
+  line-height: 30px;
+}
+
+.calculator-error__message {
+  color: var(--red);
+}
+
 
 /* ----------------------------------------------------
     END

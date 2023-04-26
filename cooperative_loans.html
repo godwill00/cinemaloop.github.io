@@ -74,7 +74,7 @@
                             <hr>
                             <a href="#"
                                 class="theme-btn-1 btn btn-effect-1 animate__animated animate__bounceIn animate__delay-2s"
-                                style="background: #003f4f;" tabindex="0">Mortgage Calculator</a>
+                                style="background: #003f4f;" tabindex="0" data-toggle="modal" data-target="#Calculator">Mortgage Calculator</a>
 
                         </div>
                     </div>
@@ -104,6 +104,103 @@
         <!-- FOOTER AREA START -->
         <div w3-include-html="footer.html"></div>
         <!-- FOOTER AREA END -->
+        
+        <!-- MORTGAGE CALCULATOR -->
+        <div class="ltn__modal-area ltn__quick-view-modal-area" >
+            <div class="modal fade" id="Calculator" tabindex="-1" >
+                <div class="modal-dialog modal-lg" role="document" >
+                    <div class="modal-content" style="background-color:#1e1f1f; color:#ffffff">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="background: #ffffff;">
+                                <span aria-hidden="true">&times;</span>
+                                <!-- <i class="fas fa-times"></i> -->
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section style="background-color:#1e1f1f; color:#ffffff"><br><br>
+                                <div class="container">
+                                    <div class="row ">
+                                        <div class="col-12 col-md-6">
+                                            <div class="medica-appointment-card" style="background-color:#1e1f1f">
+                                                <h1 style="color:#ffffff"><strong>Mortgage Calculator</strong></h1>
+                            
+                                                <form id="mortgage">
+                                                    <div class="row">
+                                                       
+
+                                                        <div class="col-12 col-md-6">loan Amount
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control text-black" id="loanAmount" placeholder="Loan amount">
+                                                            </div>
+                                                        </div>
+                                                      <div class="col-12 col-md-8">Annual interest rate
+                                                            <div class="form-group">
+                                                                <select id="interestRate" class="form-control">
+                                                                    <!-- <option value="6" >6.0%</option>
+                                                                    <option value="7.5">7.5%</option> -->
+                                                                    <option value="7">7.0%</option>
+                                                                </select>
+                                                            </div>
+                                                            <!-- <div class="form-group">
+                                                                <input type="number" class="form-control text-black" id="interestRate" value="7" disabled placeholder="Interest Rate">
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="col-12 col-md-6">Loan period in years
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control text-black" id="loanDuration" placeholder="Loan period in years">
+                                                            </div>
+                                                        </div>
+                                                      
+                                                        <div class="col-12 col-md-6">Monthly Income
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control text-black" id="monthlyIncome" placeholder="Monthly Income">
+                                                            </div>
+                                                        </div>
+                                                      
+                                                        <div class="col-12">
+                                                            <button type="submit" class="theme-btn-1 btn btn-effect-1" style="background:#003f4f">Calculate</button>
+
+                                                            <button class="theme-btn-1 btn btn-effect-1" style="background-color:#ffc549; color: #000000;"  type="reset" onclick="Reset()">Reset</button>
+                                                            
+                                                         
+                                                         
+                                              
+                                                        </div>
+                                                        
+                                                       
+                                                    </div>
+                                                    
+                                                </form> <br>
+                                          
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-12 col-md-6">
+                                           
+                                                <div class="ltn__feature-item ltn__feature-item-6 bg-white box-shadow-1 active">
+                                                    <div class="ltn__menu-widget">
+                                                                <ul>
+                                                          
+                                                                    <li><h6  class="section-subtitle section-subtitle-2 ltn__primary-color" style="background-color:#dbdbdb; color:#f8f8f8" >Actual number of payments</h6> <span id="anp" style="margin-left: 50px;"></span></li>
+                                                                    <li><h6  class="section-subtitle section-subtitle-2 ltn__primary-color" style="background-color:#dbdbdb; color:#f8f8f8" >Scheduled payment </h6> <span id="sp" style="margin-left: 50px;"></span></li>  
+                                                                    <li><h6  class="section-subtitle section-subtitle-2 ltn__primary-color" style="background-color:#dbdbdb; color:#f8f8f8" >Scheduled number of payments</h6> <span id="snp" style="margin-left: 50px;"></span></li>
+                                                                    <li><h6  class="section-subtitle section-subtitle-2 ltn__primary-color" style="background-color:#dbdbdb; color:#f8f8f8" >Total interest </h6> <span id="ti" style="margin-left: 50px;"></span></li>
+                                                                    <li><h6  class="section-subtitle section-subtitle-2 ltn__primary-color" style="background-color:#dbdbdb; color:#f8f8f8" >Status</h6> <span id="status" style="margin-left: 50px;"></span></li>
+                                                                  
+                                                                </ul>
+                                                    </div>
+                                        </div>
+                                    
+                            
+                                        
+                                    </div>
+                                </div>
+                            </div></section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Body main wrapper end -->
 
@@ -111,6 +208,7 @@
     <script>
         includeHTML();
     </script>
+    <script src="js/mortgage.js" type="text/javascript"></script>
     <!-- All JS Plugins -->
     <script src="js/plugins.js"></script>
     <!-- Main JS -->
