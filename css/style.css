@@ -1373,7 +1373,7 @@ object {
 dl,
 ol,
 ul {
-  padding-left: 20px;
+  padding-left: 55%;
 }
 
 .post-password-form input {
@@ -5440,6 +5440,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .header-menu-2 .ltn__main-menu > ul {
   display: inline-block;
+  
+  
 }
 
 /* ----------------------------------------------
@@ -5503,10 +5505,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .ltn__main-menu > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  padding: 0;
+  position: relative;
 }
 
 .ltn__main-menu li {
