@@ -62,8 +62,6 @@ font-family: 'Rajdhani', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&amp;family=Poppins:wght@400;500;600;700;800;900&amp;display=swap");
-
 /*
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
@@ -344,7 +342,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: var(--ltn__heading-color);
+  color: #91b2b2d5;
   clear: both;
   font-family: var(--ltn__heading-font);
   font-weight: 700;
@@ -1373,7 +1371,7 @@ object {
 dl,
 ol,
 ul {
-  padding-left: 55%;
+  padding-left: 20%;
 }
 
 .post-password-form input {
@@ -15752,6 +15750,7 @@ input.cart-plus-minus-box {
 
 .about-us-img-wrap img {
   margin: 0;
+  border-radius: 25px;
 }
 
 .about-us-img-info {
@@ -19343,7 +19342,7 @@ input.cart-plus-minus-box {
 }
 
 .ltn__slide-item-2 .slide-title {
-  font-size: 35px;
+  font-size: 50px;
 }
 
 @media only screen and (max-width: 767px) {
